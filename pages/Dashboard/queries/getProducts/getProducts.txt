@@ -1,0 +1,22 @@
+SELECT 
+  p.id AS id,
+  p.name AS name,
+	p.type AS category,
+	p.description AS description,
+	p.image AS image,
+  v.id AS product_variant_id,
+  v.price AS price,
+  v.cost AS cost,
+	v.sku AS sku,
+	v.low_stock AS low_stock,
+  SUM(pl.stock) AS total_stock
+FROM 
+  product p 
+  INNER JOIN product_variant v ON p.id = v.product_id 
+  LEFT JOIN product_location pl ON v.id = pl.product_variant_id
+GROUP BY 
+  p.id, p.name, p.type, v.id, v.price, p.description, p.image, v.cost, v.sku, v.low_stock
+ORDER BY 
+  p.id, v.id;
+
+

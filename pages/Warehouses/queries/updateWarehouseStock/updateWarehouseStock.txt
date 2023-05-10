@@ -1,0 +1,3 @@
+UPDATE product_location
+  SET stock = {{this.params.stock}}
+  WHERE id = {{ this.params.id }};

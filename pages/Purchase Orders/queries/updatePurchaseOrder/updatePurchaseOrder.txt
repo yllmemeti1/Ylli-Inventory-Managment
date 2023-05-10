@@ -1,0 +1,6 @@
+UPDATE purchase_order
+  SET company_id = {{sel_chooseSupplier.selectedOptionValue}},
+	location_id = {{sel_warehouse.selectedOptionValue}},
+	order_date = {{dat_orderDate.formattedDate}},
+	tax = {{inp_tax.text}}
+  WHERE id = {{ tbl_purchaseOrders.triggeredRow.Id }};

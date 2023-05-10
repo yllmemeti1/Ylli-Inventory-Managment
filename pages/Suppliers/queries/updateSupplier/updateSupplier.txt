@@ -1,0 +1,6 @@
+UPDATE company
+  SET name = {{this.params.name}},
+	phone = {{this.params.phone}},
+	email = {{this.params.email}},
+	address = {{this.params.address}}
+  WHERE id = {{ this.params.id }};

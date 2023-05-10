@@ -1,0 +1,6 @@
+UPDATE company_product
+  SET name = {{tbl_supplierDetailsProducts.updatedRow.Name}},
+	price = {{tbl_supplierDetailsProducts.updatedRow.Price}},
+	description = {{tbl_supplierDetailsProducts.updatedRow.Description}},
+	sku = {{tbl_supplierDetailsProducts.updatedRow.Sku}}
+  WHERE id = {{ tbl_supplierDetailsProducts.updatedRow.Id }};

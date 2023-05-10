@@ -1,0 +1,4 @@
+SELECT po.*, c.name, c.phone, c.email, l.label, l.address1
+FROM purchase_order po
+JOIN company c ON po.company_id = c.id
+JOIN location l ON po.location_id = l.id;

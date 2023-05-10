@@ -1,0 +1,6 @@
+SELECT pl.*, l.label, l.address1
+FROM product_location pl 
+JOIN location l ON pl.location_id = l.id
+WHERE pl.product_variant_id = {{this.params.variationId}};
+
+

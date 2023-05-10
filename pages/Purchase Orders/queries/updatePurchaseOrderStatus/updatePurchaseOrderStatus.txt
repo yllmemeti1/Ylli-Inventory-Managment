@@ -1,0 +1,3 @@
+UPDATE purchase_order
+  SET status = 'RECEIVED'
+  WHERE id = {{this.params.purchaseOrderId}};

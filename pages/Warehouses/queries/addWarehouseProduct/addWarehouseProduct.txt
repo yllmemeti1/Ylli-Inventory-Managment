@@ -1,0 +1,8 @@
+INSERT INTO product_location
+  (product_id, location_id, stock)
+VALUES
+  (
+    {{ this.params.productId }},
+    {{ this.params.locationId }},
+    {{ this.params.stock }}
+  );

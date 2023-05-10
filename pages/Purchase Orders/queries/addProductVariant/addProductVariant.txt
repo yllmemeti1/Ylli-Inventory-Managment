@@ -1,0 +1,12 @@
+INSERT INTO product_variant
+  (product_id, sku, price, cost, low_stock)
+VALUES
+  (
+    {{ this.params.productId }},
+		{{ this.params.sku }},
+    {{ this.params.salePrice }},
+    {{ this.params.costPrice }},
+		{{ this.params.reorderPoint }}
+  )
+	RETURNING*;
+	

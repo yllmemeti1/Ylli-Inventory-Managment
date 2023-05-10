@@ -1,0 +1,48 @@
+{
+  "pages": [
+    {
+      "id": "Dashboard",
+      "isDefault": true
+    },
+    {
+      "id": "Products",
+      "isDefault": false
+    },
+    {
+      "id": "Purchase Orders",
+      "isDefault": false
+    },
+    {
+      "id": "Suppliers",
+      "isDefault": false
+    },
+    {
+      "id": "Warehouses",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#EAEDFB",
+  "icon": "cloud",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
+  "collapseInvisibleWidgets": true,
+  "forkingEnabled": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

@@ -1,0 +1,11 @@
+INSERT INTO company
+  (name, phone, email, address, updated)
+VALUES
+  (
+    {{ this.params.name }},
+    {{ this.params.phone }},
+    {{ this.params.email }},
+		{{ this.params.address }},
+		{{ new Date().toISOString()}}
+  )
+		RETURNING*;

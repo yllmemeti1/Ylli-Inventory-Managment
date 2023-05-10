@@ -1,0 +1,10 @@
+INSERT INTO product
+  (name, description, type, image)
+VALUES
+  (
+    {{ this.params.name }},
+    {{ this.params.description }},
+		{{ this.params.category }},
+		{{ this.params.image }}
+  )
+	RETURNING*;

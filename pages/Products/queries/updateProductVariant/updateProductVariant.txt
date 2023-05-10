@@ -1,0 +1,6 @@
+UPDATE product_variant
+  SET sku = {{this.params.sku}},
+	low_stock = {{this.params.lowStock}},
+	price = {{this.params.salePrice}},
+	cost = {{this.params.costPrice}}
+  WHERE id = {{ this.params.variantId }};

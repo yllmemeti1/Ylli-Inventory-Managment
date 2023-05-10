@@ -1,0 +1,11 @@
+INSERT INTO purchase_order
+  (company_id, location_id, tax, order_date, status)
+VALUES
+  (
+    {{ this.params.supplierId }},
+    {{ this.params.warehouseId }},
+    {{ this.params.tax }},
+		{{ this.params.orderDate }},
+		'UNFULFILLED'
+  )
+	RETURNING*;

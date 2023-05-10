@@ -1,0 +1,4 @@
+SELECT po.*, cp.name AS name, cp.price AS price
+FROM purchase_order_product po
+JOIN company_product cp ON po.product_id = cp.id
+WHERE po.purchase_order_id = {{this.params.purchaseOrderId}};

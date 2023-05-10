@@ -1,0 +1,1 @@
+SELECT * FROM product_location WHERE id = {{sel_chooseProduct.selectedOptionValue}};

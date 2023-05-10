@@ -1,0 +1,6 @@
+UPDATE product
+SET name = {{this.params.name}},
+    description = {{this.params.description}},
+    type = {{this.params.type}},
+		image = {{this.params.image}}
+WHERE id = {{this.params.productId}};

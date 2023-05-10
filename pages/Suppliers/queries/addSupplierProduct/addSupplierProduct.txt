@@ -1,0 +1,9 @@
+INSERT INTO company_product
+  (name, price, image, company_id)
+VALUES
+  (
+    {{ this.params.name }},
+    {{ this.params.price }},
+		'https://picsum.photos/640/360',
+		{{ this.params.supplierId }}
+  );

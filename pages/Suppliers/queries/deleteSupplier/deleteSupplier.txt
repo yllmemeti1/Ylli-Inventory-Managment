@@ -1,0 +1,1 @@
+DELETE FROM company WHERE id = {{tbl_suppliers.triggeredRow.Id}};

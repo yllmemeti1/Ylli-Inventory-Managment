@@ -1,0 +1,8 @@
+INSERT INTO purchase_order_product
+  (product_id, quantity, purchase_order_id)
+VALUES
+  (
+    {{ this.params.productId }},
+    {{ this.params.quantity }},
+    {{ this.params.purchaseOrderId }}
+  );

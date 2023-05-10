@@ -1,0 +1,8 @@
+SELECT pl.*, p.name AS name
+FROM product_location pl 
+JOIN product_variant v ON pl.product_variant_id = v.id
+JOIN product p ON v.product_id = p.id
+WHERE pl.location_id = {{this.params.warehouseId}} AND pl.stock > 0;
+
+
+
